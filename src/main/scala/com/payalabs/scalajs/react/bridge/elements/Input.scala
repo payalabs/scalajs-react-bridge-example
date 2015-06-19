@@ -5,6 +5,9 @@ import org.scalajs.dom.html
 
 import scala.scalajs.js
 
+/**
+ * Bridge to [ReactBootstrap](http://react-bootstrap.github.io/)'s Input component
+ */
 case class Input(id: js.UndefOr[String]  = js.undefined, className: js.UndefOr[String] = js.undefined,
                  ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Any] = js.undefined,
                  `type`: js.UndefOr[String] = js.undefined,

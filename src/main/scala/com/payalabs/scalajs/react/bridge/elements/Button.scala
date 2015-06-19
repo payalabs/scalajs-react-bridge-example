@@ -2,6 +2,9 @@ package com.payalabs.scalajs.react.bridge.elements
 
 import scala.scalajs.js
 
+/**
+ * Bridge to [ReactBootstrap](http://react-bootstrap.github.io/)'s Button component
+ */
 case class Button(id: js.UndefOr[String]  = js.undefined, className: js.UndefOr[String] = js.undefined,
                   ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Any] = js.undefined,
                   bsStyle: js.UndefOr[String] = js.undefined,

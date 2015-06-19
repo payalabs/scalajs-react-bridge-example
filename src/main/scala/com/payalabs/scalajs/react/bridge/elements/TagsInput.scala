@@ -4,6 +4,9 @@ import com.payalabs.scalajs.react.bridge.ReactBridgeComponent
 
 import scala.scalajs.js
 
+/**
+ * Bridge to [TagsInput](https://github.com/olahol/react-tagsinput)'s component
+ */
 case class TagsInput(id: js.UndefOr[String]  = js.undefined, className: js.UndefOr[String] = js.undefined,
                      ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Any] = js.undefined,
                      defaultValue: js.UndefOr[Seq[String]] = js.undefined,
