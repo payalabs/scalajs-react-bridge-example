@@ -1,5 +1,6 @@
 package com.payalabs.scalajs.react.bridge.showcase
 
+import com.payalabs.scalajs.react.bridge._
 import com.payalabs.scalajs.react.bridge.elements.{ReactMediumEditor, Input, Button, TagsInput}
 import japgolly.scalajs.react.vdom.all._
 import japgolly.scalajs.react.{React, ReactComponentB}
