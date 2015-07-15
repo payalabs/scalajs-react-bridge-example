@@ -10,6 +10,7 @@ libraryDependencies ++= {
   val scalaJsDom = "0.8.0"
   val scalaJsReact = "0.9.0"
   Seq(
+    "org.scala-lang" % "scala-reflect" % scalaVersion.value,
     "org.scala-js" %%% "scalajs-dom" % scalaJsDom,
     "com.github.japgolly.scalajs-react" %%% "core" % scalaJsReact,
     "com.github.japgolly.scalajs-react" %%% "extra" % scalaJsReact,
