@@ -3,7 +3,7 @@ package com.payalabs.scalajs.react.bridge.showcase
 import com.payalabs.scalajs.react.bridge._
 import com.payalabs.scalajs.react.bridge.elements.{ReactMediumEditor, Input, Button, TagsInput}
 import japgolly.scalajs.react.vdom.all._
-import japgolly.scalajs.react.{React, ReactComponentB}
+import japgolly.scalajs.react.{React, ReactDOM, ReactComponentB}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -43,6 +43,6 @@ object ShowcaseApp extends js.JSApp {
       )
     }.build(())
 
-    React.render(component, dom.document.body)
+    ReactDOM.render(component, dom.document.getElementById("app-container"))
   }
 }

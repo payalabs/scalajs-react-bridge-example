@@ -1,6 +1,7 @@
 __webpack_public_path__ = "/";
 
 React = require("react");
+ReactDOM = require("react-dom");
 
 if (__PRODUCTION__) {
     require('./target/scala-2.11/scalajs-react-bridge-example-opt.js');
