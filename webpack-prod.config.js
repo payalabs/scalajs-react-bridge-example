@@ -19,7 +19,7 @@ config.module.loaders.push({
             {
                 pattern: /<!-- externals to be replaced by webpack StringReplacePlugin -->/ig,
                 replacement: function (match, p1, offset, string) {
-                    return '<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-with-addons.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>';
+                    return '<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-with-addons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>';
                 }
             }
         ]})
