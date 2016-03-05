@@ -1,6 +1,7 @@
 package com.payalabs.scalajs.react.bridge.elements
 
 import com.payalabs.scalajs.react.bridge.ReactBridgeComponent
+import japgolly.scalajs.react.{CallbackTo, Callback}
 
 import scala.scalajs.js
 
@@ -12,7 +13,7 @@ case class TagsInput(id: js.UndefOr[String]  = js.undefined, className: js.Undef
                      defaultValue: js.UndefOr[Seq[String]] = js.undefined,
                      value: js.UndefOr[Array[String]] = js.undefined,
                      placeholder: js.UndefOr[String] = js.undefined,
-                     onChange: js.UndefOr[js.Array[String] => Unit] = js.undefined,
-                     validate: js.UndefOr[String => Boolean] = js.undefined,
-                     transform: js.UndefOr[String => String] = js.undefined)
+                     onChange: js.UndefOr[js.Array[String] => Callback] = js.undefined,
+                     validate: js.UndefOr[String => CallbackTo[Boolean]] = js.undefined,
+                     transform: js.UndefOr[String => CallbackTo[String]] = js.undefined)
   extends ReactBridgeComponent
