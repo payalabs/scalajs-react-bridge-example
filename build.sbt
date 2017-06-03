@@ -2,19 +2,21 @@ enablePlugins(ScalaJSPlugin)
 
 organization := "com.payalabs"
 name := "scalajs-react-bridge-example"
-version := "0.3.0-SNAPSHOT"
+version := "0.4.0-SNAPSHOT"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.12.1"
 
 libraryDependencies ++= {
-  val scalaJsDom = "0.8.2"
-  val scalaJsReact = "0.10.0"
+  val scalaJsDom = "0.9.2"
+  val scalaJsReact = "1.0.0"
+  val scalaJsReactBridge = "0.4.0-SNAPSHOT"
+
   Seq(
     "org.scala-lang" % "scala-reflect" % scalaVersion.value,
     "org.scala-js" %%% "scalajs-dom" % scalaJsDom,
     "com.github.japgolly.scalajs-react" %%% "core" % scalaJsReact,
     "com.github.japgolly.scalajs-react" %%% "extra" % scalaJsReact,
-    "com.payalabs" %%% "scalajs-react-bridge" % "0.3.0-SNAPSHOT"
+    "com.payalabs" %%% "scalajs-react-bridge" % scalaJsReactBridge
   )
 }
 
