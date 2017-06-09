@@ -8,12 +8,13 @@ import scala.scalajs.js
 /**
  * Bridge to [TagsInput](https://github.com/olahol/react-tagsinput)'s component
  */
-case class TagsInput(id: js.UndefOr[String]  = js.undefined, className: js.UndefOr[String] = js.undefined,
-                     ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Key] = js.undefined,
-                     defaultValue: js.UndefOr[Seq[String]] = js.undefined,
-                     value: js.UndefOr[Seq[String]] = js.undefined,
-                     placeholder: js.UndefOr[String] = js.undefined,
-                     onChange: js.UndefOr[js.Array[String] => Callback] = js.undefined,
-                     validate: js.UndefOr[String => CallbackTo[Boolean]] = js.undefined,
-                     transform: js.UndefOr[String => CallbackTo[String]] = js.undefined)
-  extends ReactBridgeComponent
+object TagsInput extends ReactBridgeComponent {
+  def apply(id: js.UndefOr[String]  = js.undefined, className: js.UndefOr[String] = js.undefined,
+            ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Key] = js.undefined,
+            defaultValue: js.UndefOr[Seq[String]] = js.undefined,
+            value: js.UndefOr[Seq[String]] = js.undefined,
+            placeholder: js.UndefOr[String] = js.undefined,
+            onChange: js.UndefOr[js.Array[String] => Callback] = js.undefined,
+            validate: js.UndefOr[String => CallbackTo[Boolean]] = js.undefined,
+            transform: js.UndefOr[String => CallbackTo[String]] = js.undefined): Component = this.autoConstruct
+}
