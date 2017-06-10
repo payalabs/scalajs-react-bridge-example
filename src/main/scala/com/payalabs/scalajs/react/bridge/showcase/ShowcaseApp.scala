@@ -21,7 +21,7 @@ object ShowcaseApp extends js.JSApp {
         ),
         div(className := "well")(
           b("Tags input (open Inspect Element to see callback being called as you make changes). Values with size > 7 considered invalid"),
-          TagsInput(value = Seq("some", "default", "values"), onChange = printSequence _, validate = validateLength _)()()
+          TagsInput(value = Seq("some", "default", "values"), onChange = printSequence _, validate = validateLength _)
         ),
         div(className := "well")(
           ReactMediumEditor(text =
@@ -31,12 +31,12 @@ object ShowcaseApp extends js.JSApp {
             | <p>Click here and start editing.</p>
             |
             | <b>Select some text to see the editor toolbar pop up.</b>
-            """.stripMargin, options = Map("buttons" -> js.Array("bold", "italic", "underline", "anchor", "header1", "header2", "quote", "orderedlist", "unorderedlist")))()()
+            """.stripMargin, options = Map("buttons" -> js.Array("bold", "italic", "underline", "anchor", "header1", "header2", "quote", "orderedlist", "unorderedlist")))
         ),
         div(className := "well")(
           b("Bootstrap"),
-          FormControl(placeholder = "This is a bootstrap input", `type` = "text")()(),
-          Button()()("Bootstrap Button")
+          FormControl(placeholder = "This is a bootstrap input", `type` = "text"),
+          Button().apply("Bootstrap Button")
         )
       )
     }.build.apply()

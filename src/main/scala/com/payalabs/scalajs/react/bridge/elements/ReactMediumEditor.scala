@@ -13,5 +13,5 @@ object ReactMediumEditor extends ReactBridgeComponent {
             ref: js.UndefOr[String] = js.undefined, key: js.UndefOr[Key] = js.undefined,
             text: js.UndefOr[String] = js.undefined,
             onChange: js.UndefOr[String => Callback] = js.undefined,
-            options: js.UndefOr[Map[String, Any]] = js.undefined): Component = this.autoConstruct
+            options: js.UndefOr[Map[String, Any]] = js.undefined): ComponentNoChild = this.autoConstructNoChild
 }
